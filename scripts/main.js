@@ -21,6 +21,13 @@ document.querySelector('img').setAttribute('width','400');
 
 document.querySelector('img').classList.add('add_border');
 
+// FUNTIONS:
+function addayear(yr) {
+    console.log(yr);
+}
+
+addayear(year);
+
 // SELECTION: 
 //(I DONT WANT ANYTHING TO HAPPEN UNTIL SOMETHING IS TRUE)
 
@@ -28,3 +35,20 @@ document.querySelector('img').classList.add('add_border');
 if (year == 2022) {
     console.log('current year')
 }
+
+// REPETITION (loops)
+
+const myarray = ['CSE121B','WDD230', 'CIT111'];
+
+function makealist(item) {
+    document.querySelector('div').innerHTML += `<li> ${item} </li>`
+}
+myarray.forEach(makealist);
+
+// This is what I need with JS for week 1
+
+//lastModify property that works with document:
+
+let currentdate = document.lastModified;
+document.querySelector('#lastdate').textContent = currentdate;
+console.log(currentdate);
