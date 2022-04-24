@@ -1,3 +1,33 @@
-.add_boder {
-    border: 5px solid green;
+header {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    border-radius: 5px;
+    background-color: rgb(38, 65, 219);
+    color: white;
+}
+
+h1 {
+    padding-top: 20px;
+    color: white;
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.add_border {
+    border: 5px solid gray;
+}
+
+
+footer {
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(38, 65, 219);
+    color: white;
+}
+
+#lastdate {
+    color: yellow;
 }
