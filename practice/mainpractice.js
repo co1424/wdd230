@@ -16,7 +16,7 @@ newparagraph.textContent = 'This is my sample paragraph.';
 document.querySelector('div').appendChild(newparagraph);
 
 // IMAGE:
-document.querySelector('img').setAttribute('src','images/ProMe.JPG');
+document.querySelector('img').setAttribute('src', 'MyPicture.jpg');
 document.querySelector('img').setAttribute('width','120');
 
 document.querySelector('img').classList.add('add_border');
