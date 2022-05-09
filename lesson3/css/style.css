@@ -15,9 +15,11 @@ body {
     border: solid black 3px;
 }
 
-#scenatios {
-    list-style: none;
-    margin-left: auto;
+#scenarios ul li {
+    list-style-type: decimal;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: left;
 }
 
 p, ol {
