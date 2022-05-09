@@ -75,6 +75,7 @@ div .scenarios {
 
 footer {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 @media screen and (max-width: 1200px) { 
     nav a {
