@@ -30,6 +30,7 @@ nav ul {
 nav li {
     list-style: none;
     padding: 20px 51px;
+    display: none;
 }
 
 nav li a {
@@ -37,11 +38,29 @@ nav li a {
     text-decoration:  none;
     font-size: 1.5em;
     text-align: center;
+}
 
+.responsive li{
+    display: block;
+}
+
+li {
+    display: none;
+}
+
+li:first-child {
+    display: block;
 }
 
 @media screen and (min-width: 900px) {
     nav ul {
         flex-direction: row;
     }
+    nav li {
+        display: block;
+    }
+    li:first-child {
+        display: none;
+    }
+
 }
