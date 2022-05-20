@@ -1,0 +1,13 @@
+
+#parent {
+    background-color: lightblue;
+    height: 800px;
+    position: relative; /* This allows you to use top, right... positioning. You can use this to place this onto a picture/image.*/
+}
+
+#child {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+}
