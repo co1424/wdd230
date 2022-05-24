@@ -1,12 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <title>Chamber Home Page Build</title>
 </head>
+
 <body>
-    
+    <div class="content">
+        <header>
+            <nav>
+
+                <ul>
+                    <li><img class="logo_header" src="images/Logo.jpg" alt="company logo"></li>
+                    <li><a href="index.hmtl" class="active">Home</a></li>
+                    <li><a href="#">Directory</a></li>
+                    <li><a href="#">Join</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <section id="social_media">
+                        <img class="facebook" src="images/fb.png" alt="Facebook logo">
+                        <img class="linkedin" src="images/linkedin.png" alt="Linkedin Logo">
+                    </section>
+                </ul>
+                <p id="header_date">Today's date: <span id="today_date"></span></p>
+            </nav>
+        </header>
+        <hr>
+        <main>
+            <section>
+                <div class="main_container">
+                    <div class="event">Event</div>
+                    <div class="hero">Hero</div>
+                    <div class="weather">Weather</div>
+                    <div class="join">Join</div>
+                    <div class="news">News Release</div>
+                    <div class="spotlight">
+                        <div class="spotlight1">Spotlight 1</div>
+                        <div class="spotlight2">Spotlight 2</div>
+                        <div class="spotlight3">Spotlight 3</div>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <section></section>
+        </main>
+        <footer>
+            <hr>
+            <div id="info">
+                <img class="logo_footer" src="images/Logo.jpg" alt="company logo">
+                <div id="address">
+                    <p>Bogota Chamber of Commerce</p>
+                    <p>Calle 67 #8-32, Bogotá, Colombia</p>
+                </div>
+                <div id="contact">
+                    <p>bogocommerce@info.com</p>
+                    <p>+57-1-201-3567</p>
+                    <p>📍 Location Map</p>
+
+                </div>
+            </div>
+            <hr>
+            <div id="buttom_banner">
+                <p>&copy;<span id="year"></span> | Bogota Chamber of Commerce | Eddy Renteria | WDD 230 Project |Last
+                    Modification: <span id="lastdate"></span></p>
+            </div>
+        </footer>
+
+        <script src="js/script.js">
+
+        </script>
+    </div>
 </body>
+
 </html>
