@@ -63,11 +63,37 @@ nav ul {
 
 }
 
+.ham {
+    text-align: center;
+    
+    
+}
+
+/* I need to keep on working on the HAMBURGER MENU NEXT. */
+.ham span {
+    background-color:lightblue;
+    text-decoration: none;
+    
+    width: 35px;
+}
+.ham span:nth-child(1) {
+    display: block;
+}
+.ham span:nth-child(2) {
+    display: none;
+}
+.ham.responsive span:nth-child(1) {
+    display: none;
+}
+.ham.responsive span:nth-child(2) {
+    display: block;
+}
+
 li {
     padding-top: 50px;
 }
 
-section .facebook {
+div .facebook {
     width: 55px;
     height: 55px;
     grid-column: 5/6;
@@ -78,7 +104,7 @@ section .facebook {
 
 }
 
-section .linkedin {
+div .linkedin {
     width: 55px;
     height: 55px;
     padding: 10px;
@@ -105,25 +131,36 @@ body {
 }
 
 
-.main_container {
+.boxes {
+    display: grid;
     margin-left: 80px;
     margin-right: 80px;
-    display: grid;
+    padding: 4px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
     grid-gap: 10px;
     text-align: center;
     flex-direction: column;
 }
 
-.grid-item {
-    display: grid;
+
+.box h3 {
+    color: black;
+    font-size: 1.6em;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+     
+}
+.box p {
+    text-align: center; 
+    padding: 0 15px;
 }
 
+/* .grid-item {
+    display: grid;
+} */
 
-
-
-.event {
+#event {
     background-color: lightgray;
     border: solid 2px black;
     padding: 10px;
@@ -134,36 +171,55 @@ body {
 
 }
 
-.hero {
-
+#hero_section {
+    position: relative;
     background-color: lightgray;
     border: solid 2px black;
-    object-fit: cover;
+    /* object-fit: cover;
     background-size: cover;
-    background-position: center;
-    width: 100%;
-    max-height: 100%;
+    background-position: center; */
     grid-column: 2/4;
     grid-row: 1/3;
     box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
 
 }
 
-.weather {
+#hero img {
+    width: 100%;
+    height: 300px;
+}
+
+#weather_section {
     background-color: lightgray;
     border: solid 2px black;
     object-fit: cover;
     background-size: cover;
     background-position: center;
-    width: 100%;
-    max-height: 100%;
+    /* width: 100%;
+    max-height: 100%; */
     grid-column: 1/1;
     grid-row: 2/2;
     box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
 
 }
 
-.join {
+#weather_section img {
+    width: 100px;
+}
+
+#weather span {
+    padding-left: 10px;
+}
+
+.temp {
+    display: flex;
+    justify-content: space-around;
+}
+.temp p{
+    font-size: 2em;
+}
+
+#join {
     background-color: lightgray;
     border: solid 2px black;
     padding: 10px;
@@ -173,7 +229,31 @@ body {
 
 }
 
-.news {
+#button2 {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+#button .join, #button2 {
+    background-color: skyblue;
+    padding: 20px; 
+    box-shadow: 0 0 10px skyblue;
+    border: 1px solid black; 
+    border-radius: 10px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+#hero img {
+    width: 100%;
+}
+#button a, #button2 a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+#news {
     background-color: lightgray;
     border: solid 2px black;
     padding: 10px;
@@ -183,9 +263,10 @@ body {
 
 }
 
-.spotlight {
+#spotlights {
     background-color: lightgray;
     display: grid;
+    grid-gap: 10px;
     padding: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -194,33 +275,18 @@ body {
     border: solid 2px black;
     box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
 }
+  
 
-.spotlight1 {
+#spotlight1, #spotlight2, #spotlight3 {
     background-color: lightgray;
-    border: solid 2px black;
-    padding: 3px;
-    box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
-
-
-}
-
-.spotlight2 {
-    background-color: lightgray;
-    border: solid 2px black;
-    padding: 3px;
-    box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
-
-}
-
-.spotlight3 {
-    background-color: lightgray;
-    border: solid 2px black;
+    border: 2px solid black;
     padding: 10px;
-    padding: 3px;
+    width: 90%;
+    border: solid 2px black;
     box-shadow: 0px 0px 3px 3px rgb(51, 49, 49);
-
-
 }
+
+
 
 
 /* ******************* FOOTER ******************* */

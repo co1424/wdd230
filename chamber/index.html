@@ -16,91 +16,138 @@
 <body>
     <div class="content">
         <header>
-            <nav>
+            <nav class="navigation">
 
                 <ul>
                     <li><img class="logo_header" src="images/Logo.jpg" alt="company logo"></li>
+                    <li><a class="ham" href="#"><span>&#9776;</span><span>X</span></a></li>
                     <li><a href="index.hmtl" class="active">Home</a></li>
                     <li><a href="#">Directory</a></li>
                     <li><a href="#">Join</a></li>
                     <li><a href="#">Contact</a></li>
-                    <section id="social_media">
+                    <div id="social_media">
                         <img class="facebook" src="images/fb.png" alt="Facebook logo">
                         <img class="linkedin" src="images/linkedin.png" alt="Linkedin Logo">
-                    </section>
+                    </div>
                 </ul>
                 <p id="header_date"><span id="today_date"></span></p>
+
             </nav>
         </header>
+        <div id='msg-box'>
+            <p id='msg'> 🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+        </div>
+        <main class="boxes">
+            <!-- BOXES -->
+
+            <!-- RIBBON CUTTING - EVENT -->
+            <div class="box" id="event">
+                <h3>Ribbon Cutting</h3>
+                <p>The Diamond Shack</p>
+                <p>Join us for the grand openning of the Diamond Shack, Thursday at 11:00 p.m.</p>
+            </div>
+
+            <!-- HERO SECTION AND IMAGE -->
+            <div class="box" id="hero_section">
+                <h2>Welcome to Bogota!</h2>
+                <!-- <img class="hero" src="images/bogota.jpg" alt="Bogota"> -->
+                <div id='button'>
+                    <a class="join" href='#'>Join the Chamber</a>
+                </div>
+            </div>
+
+            <!-- WEATHER SECTION -->
+            <div class="box" id="weather_section">
+                <h3>Weather</h3>
+                <div class='temp'>
+                    <img src="images/weather-icon.png" alt="weather icon">
+                    <p id="t">33</p><p><span>&#8451;</span></p>
+                    
+                </div>
+                <hr>
+                    <h3>Partly Coudy</h3>
+                    <p>Wind Speed:</p><p><span id='ws'>2.5</span><span>km/h</span></p>
+                    <p>Wind Chill:<span id='wc'>N/A</span></p>
+                
+            </div>
+
+            <!-- JOIN US! BOX -->
+            <div class="box" id="join">
+                <button id='button2'>
+                    <a class="join" href='#'>Join Us!</a>
+                </button>
+                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+            </div>
+
+            <!-- NEWS SECTION -->
+            <div class="box" id="news">
+                <h3>News Release</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+
+            <!-- SPOTLIGHTS 1, 2, AND 3 -->
+            <div class="box" id="spotlights">
+                <!-- SPOTLIGHT 1 - TRANSPORT -->
+                <div id="spotlight1">
+                    <h3>Thankful Transport</h3>
+                    <img src="images/truck.JPG" alt="truck">
+                    <p>"We get it there for you!"</p>
+                    <hr>
+                    <p>hello@thankfultransport.com</p>
+                    <p>999-999-9999 | Website</p>
+                </div>
+
+                <!-- SPOTLIGHT 2 - COLOR PENCILS -->
+                <div id="spotlight2">
+                    <h3>Code Primera</h3>
+                    <img src="images/pencils.JPG" alt="pencils">
+                    <p>An after school coding instructional program.</p>
+                    <hr>
+                    <p>999-999-9999 | Website</p>
+                </div>
+
+                <!-- SPOTLIGHT 3 - BUILD A TREEFORT -->
+                <div id="spotlight3">
+                    <h3>Build a Treefort</h3>
+                    <img src="images/tree.JPG" alt="pencils">
+                    <p>Over 1,000 Plans!</p>
+                    <hr>
+                    <p>builda@treefort.com</p>
+                    <p>+888-8888-8888 | Website</p>
+                </div>
+            </div>
+    </div>
+    </section>
+    <br>
+    <section></section>
+    </main>
+    <footer>
         <hr>
-        <main>
-            <section>
-                <div class="main_container">
-                    <div class="event">Event
-                        <p>Ribbon Cutting</p>
-                        <p>The Diamond Shack</p>
-                        <p>Join us for the grand openning of the Diamond Shack, Thursday at 11:00 p.m.</p>
-                    </div>
-                    <img class="hero" src="images/bogota.jpg" alt="Bogota">
-                    <img class="weather" src="images/weather.jpg" alt="Weather">
-                    <div class="join">
-                        <button type="button">Join Us!</button>
-                        <p>Discover how to join the Chamber of Commerce and how it will benefit your organization!</p>
-
-                    </div>
-                    <div class="news">
-                        <p>News Release</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    <div class="spotlight">
-                        <div class="spotlight1">
-                            <p>Thankful Transport</p>
-                            <img src="images/truck.JPG" alt="truck">
-                            <p>"We get it there for you!"</p>
-                            <hr>
-                            <p>hello@thankfultransport.com</p>
-                            <p>999-999-9999 | Website</p>
-                        </div>
-                        <div class="spotlight2">
-                            <p>Code Primera</p>
-                            <img src="images/pencils.JPG" alt="pencils">
-                            <p>An after school coding instructional program.</p>
-                            <hr>
-                            <p>999-999-9999 | Website</p>
-
-                        </div>
-                        <div class="spotlight3">Spotlight 3</div>
-                    </div>
-                </div>
-            </section>
-            <br>
-            <section></section>
-        </main>
-        <footer>
-            <hr>
-            <div id="info">
-                <img class="logo_footer" src="images/Logo.jpg" alt="company logo">
-                <div id="address">
-                    <p>Bogota Chamber of Commerce</p>
-                    <p>Calle 67 #8-32, Bogotá, Colombia</p>
-                </div>
-                <div id="contact">
-                    <p>bogocommerce@info.com</p>
-                    <p>+57-1-201-3567</p>
-                    <a class="map" target="_blank" href="https://goo.gl/maps/gTGTxrPvMMAvcQsAA">📍 Location Map</a>
-
-                </div>
+        <div id="info">
+            <img class="logo_footer" src="images/Logo.jpg" alt="company logo">
+            <div id="address">
+                <p>Bogota Chamber of Commerce</p>
+                <p>Calle 67 #8-32, Bogotá, Colombia</p>
             </div>
-            <hr>
-            <div id="buttom_banner">
-                <p>&copy;<span id="year"></span> | Bogota Chamber of Commerce | Eddy Renteria | WDD 230 Project |Last
-                    Modification: <span id="lastdate"></span></p>
+            <div id="contact">
+                <p>bogocommerce@info.com</p>
+                <p>+57-1-201-3567</p>
+                <a class="map" target="_blank" href="https://goo.gl/maps/gTGTxrPvMMAvcQsAA">📍 Location Map</a>
+
             </div>
-        </footer>
+        </div>
+        <hr>
+        <div id="buttom_banner">
+            <p>&copy;<span id="year"></span> | Bogota Chamber of Commerce | Eddy Renteria | WDD 230 Project |Last
+                Modification: <span id="lastdate"></span></p>
+        </div>
+    </footer>
 
-        <script src="js/script.js">
+    <script src="js/script.js">
 
-        </script>
+    </script>
     </div>
 </body>
 
