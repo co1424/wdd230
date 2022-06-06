@@ -22,6 +22,33 @@ if (date.getDay() == 1 || date.getDay() == 2) {
     parent.style.display = 'show';
 }
 
+// DAYS SINCE LAST  VISITED: 
+let lastvisiteddate = document.lastModified;
+document.querySelector('#lastdate').textContent = lastvisiteddate;
+console.log(lastvisiteddate);
+
+
+if(!localStorage.getItem('lastvisit')) {
+    localStorage.setItem('lastvisit', Date.now());
+    document.getElementById('diff').textContent = 'This is your 1st visit';
+} else {
+    setStyles();
+}
+
+function setStyles() {
+    let prevDate = localStorage.getItem('lastvisit');
+    let currDate = Date.now();
+    
+    let difference = currDate - prevDate;
+        console.log(difference);
+        let daysDifference = Math.floor(difference/1000/60/60/24);
+
+    document.getElementById('diff').textContent = daysDifference;
+
+    localStorage.setItem('lastvisit', Date.now());
+
+}
+
 // HAMBURGER MENU:
 const hamburgerBtn = document.querySelector('.ham');
 const navigation = document.querySelector('.navigation')
