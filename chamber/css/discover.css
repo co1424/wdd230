@@ -120,6 +120,23 @@ div .linkedin {
 
 
 /*  ---------------- BODY ------------------ */
+/* ******************* BODY ******************* */
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+
+}
+
+.content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
 h1{
     font-family: Marcellus, serif;
     text-align: center;
