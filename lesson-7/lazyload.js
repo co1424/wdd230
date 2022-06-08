@@ -8,7 +8,7 @@ function preloadImage(image) {
     const source = image.getAttribute('data-src');
     if (!source) {
         return;
-    } 
+    }  
 
     image.src = source;
 }
