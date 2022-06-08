@@ -303,9 +303,9 @@ body {
 
 
 /* ******************* FOOTER ******************* */
-footer {
-    /* border: solid 3px black; */
-}
+/* footer {
+    border: solid 3px black;
+} */
 
 #info {
     width: 100%;
@@ -666,7 +666,7 @@ footer {
         grid-row: 3/4;
     } */
 
-    #spotlights {
+    /* #spotlights { */
         /* grid-column: 6/7;
         grid-row: 1/4; 
         flex-direction: column;
@@ -705,4 +705,3 @@ footer {
         flex-direction: row;
     }
 } */    
-

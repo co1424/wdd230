@@ -4,9 +4,9 @@ let year = date.getFullYear();
 
 // // HEADER DATE:
 const todayDate = new Date();
-const day = todayDate.getDay()
-const month = todayDate.getMonth()
-const monthDay = todayDate.getDate()
+const day = todayDate.getDay();
+const month = todayDate.getMonth();
+const monthDay = todayDate.getDate();
 
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
