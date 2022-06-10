@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+table {
+    text-align: center;
+    margin: 100px auto;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 5px 2px 5px 2px #628CA6;
+
+
+}
+thead {
+    font-weight: bold ;
+    font-size: 1.8em;
+    background-color: #7FB9C2;
+    /* background-color: red; */
+}
+
+table, td, th {
+    border: 1px solid #C0C2C0;
+    border-collapse: collapse;
+}
+td, th {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #E7FFED;
+}
+
+tbody tr:nth-child(even) {
+    
+    background-color: #E7F0ED;
+}
+
+
+tfoot {
+    background-color: #7FB9C2;
+    font-size: .7em;
+}
+
+tbody tr:first-child { /* This is to change ONLY the first row. */
+    background-color: #628CA6;
+    color: white;
+}
+
+.novemberSalesTotal {
+    color: white;
+    background-color: #628CA6;
+}
+
+.blackFriday {
+    font-style:  italic;
+
+}

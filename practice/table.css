@@ -1,0 +1,36 @@
+table {
+    text-align: center;
+    margin: 100px auto;
+
+
+}
+
+table, td, th {
+    border: 1px solid lightgray;
+    border-collapse: collapse;
+}
+td, th {
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: lightgray;
+}
+
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+thead, tfoot {
+    background-color: pink;
+}
+
+tbody tr:first-child { /* This is to change ONLY the first row. */
+    background-color: lightgreen;
+}
+
+tbody td:nth-child(2) { 
+    background-color: lightsalmon;
+    font-style:  italic;
+}
