@@ -16,10 +16,10 @@ const monthNames = [ "January", "February", "March", "April", "May", "June",
 // MONDAY & TUESDAY BANNER ANNOUNCEMENT:
 const parent = document.querySelector('#msg-box');
 
-
+console.log(date.getDay());
 if (date.getDay() == 1 || date.getDay() == 2) {
-
-    parent.style.display = 'show';
+    console.log('Hello');
+    parent.style.display = 'block';
 }
 
 // DAYS SINCE LAST  VISITED: 
