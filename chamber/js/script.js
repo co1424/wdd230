@@ -71,3 +71,4 @@ console.log(currentdate);
 document.querySelector('#year').textContent = year;
 
 document.querySelector('#today_date').textContent = `${days[day]}, ${monthDay} ${monthNames[month]} ${year}`
+

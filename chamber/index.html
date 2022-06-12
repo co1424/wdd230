@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
@@ -27,8 +28,8 @@
                     <li><a href="#">Contact</a></li>
                     <li id="social_media">
                         <img class="facebook" src="images/fb.png" alt="Facebook logo">
-                        </li>
-                        <li> 
+                    </li>
+                    <li>
                         <img class="linkedin" src="images/linkedin.png" alt="Linkedin Logo">
                     </li>
                 </ul>
@@ -37,7 +38,8 @@
             </nav>
         </header>
         <div>
-            <p id='msg'><span id="msg-box">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. || </span>Days since last
+            <p id='msg'><span id="msg-box">🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m. ||
+                </span>Days since last
                 visited: <span id='diff'></span></p>
         </div>
         <main class="boxes">
@@ -51,21 +53,22 @@
             </div>
 
             <!-- HERO SECTION AND IMAGE -->
-            <div class="box" id="hero_section">
+            <div class="box" id="hero">
                 <h2>Welcome to Bogota!</h2>
-                <!-- <picture>
-                    <source media="(min-width:1300px)" srcset="images/bogota-large.jpg">
-                    <source media="(min-width:900px)" srcset="images/bogota-medium.jpg">
-                    <source media="(min-width:550px)" srcset="images/bogota-small">
+                <picture>
+                    <source media="(min-width:1000px)" srcset="images/bogota-large.jpg">
+                    <source media="(min-width:800px)" srcset="images/bogota-medium.jpg">
+                    <source media="(min-width:600px)" srcset="images/bogota-small">
+                    <source media="(max-width:500px)" srcset="images/bogota-phone">
                     <img src="images/bogota-phone.jpg" alt="Bogota city">
-                </picture> -->
+                </picture>
                 <div id='button'>
                     <a class="join" href='#'>Join the Chamber</a>
                 </div>
             </div>
 
             <!-- WEATHER SECTION -->
-            <div class="box" id="weather_section">
+            <div class="box" id="weather">
                 <h3>Weather</h3>
                 <div class='temp'>
                     <img src="images/weather-icon.png" alt="weather icon">
@@ -102,7 +105,7 @@
                 <!-- SPOTLIGHT 1 - TRANSPORT -->
                 <div id="spotlight1">
                     <h3>Thankful Transport</h3>
-                    <img src="images/truck.JPG" alt="truck">
+                    <i class="fa fa-truck" style="font-size:48px;color:black"></i>
                     <p>"We get it there for you!"</p>
                     <hr>
                     <p>hello@thankfultransport.com</p>
@@ -112,7 +115,7 @@
                 <!-- SPOTLIGHT 2 - COLOR PENCILS -->
                 <div id="spotlight2">
                     <h3>Code Primera</h3>
-                    <img src="images/pencils.JPG" alt="pencils">
+                    <i class="fa fa-pencil" style="font-size:48px;color:black"></i>
                     <p>An after school coding instructional program.</p>
                     <hr>
                     <p>999-999-9999 | Website</p>
@@ -121,18 +124,16 @@
                 <!-- SPOTLIGHT 3 - BUILD A TREEFORT -->
                 <div id="spotlight3">
                     <h3>Build a Treefort</h3>
-                    <img src="images/tree.JPG" alt="pencils">
+                    <i class="fa fa-home" style="font-size:48px;color:black"></i>
                     <p>Over 1,000 Plans!</p>
                     <hr>
                     <p>builda@treefort.com</p>
                     <p>+888-8888-8888 | Website</p>
                 </div>
             </div>
+        </main>
     </div>
-    </section>
     <br>
-    <section></section>
-    </main>
     <footer>
         <hr>
         <div id="info">
@@ -156,9 +157,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script src="js/windchill.js"></script>
-
-    </div>
 </body>
 
 </html>
