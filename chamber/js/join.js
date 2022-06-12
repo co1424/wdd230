@@ -1,2 +1,2 @@
 
-document.querySelector('#date').value = dateTime
+document.querySelector('#joinDate').value = dateTime

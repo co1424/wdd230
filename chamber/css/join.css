@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 #content {
-    font-family: 'Noto Sans', sans-serif;
     display: flex;
     width: 70%;
     margin: 0 auto;
@@ -77,6 +76,9 @@ input[type='submit']:hover {
 
 #memberinfo li {
     list-style: none;
+    line-height : 20px;
+    margin: 0 auto;
+    padding: 0px;
 }
 
 /* -----------------MEDIA QUERIES-------------- */
