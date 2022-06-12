@@ -18,7 +18,7 @@ const parent = document.querySelector('#msg-box');
 
 console.log(date.getDay());
 if (date.getDay() == 1 || date.getDay() == 2) {
-    console.log('Hello');
+
     parent.style.display = 'block';
 }
 

@@ -51,7 +51,7 @@ nav ul {
     justify-content: space-around;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
 }
 
@@ -101,9 +101,9 @@ div .facebook {
     width: 55px;
     height: 55px;
     grid-column: 5/6;
-    padding: 10px;
+    /* padding: 10px; */
     grid-row: 1;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 50%;
 
 }
@@ -111,13 +111,16 @@ div .facebook {
 div .linkedin {
     width: 55px;
     height: 55px;
-    padding: 10px;
+    /* padding: 10px; */
     grid-column: 6/7;
     grid-row: 1;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     border-radius: 50%;
 }
 
+#msg-box {
+    display: none;
+}
 
 /*  ---------------- BODY ------------------ */
 /* ******************* BODY ******************* */

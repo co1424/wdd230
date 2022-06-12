@@ -19,7 +19,7 @@ const parent = document.querySelector('#msg-box');
 
 if (date.getDay() == 1 || date.getDay() == 2) {
 
-    parent.style.display = 'show';
+    parent.style.display = 'block';
 }
 
 // HAMBURGER MENU:
