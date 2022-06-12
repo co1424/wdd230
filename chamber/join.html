@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/join.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
@@ -22,9 +23,9 @@
                 <ul>
                     <li><img class="logo_header" src="images/Logo.webp" alt="company logo"></li>
                     <li class="ham"><a href="#"><span>&#9776;</span><span>X</span></a></li>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="discover.html">Directory</a></li>
-                    <li><a href="#">Join</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
                     <li><a href="#">Contact</a></li>
                     <li id="social_media">
                         <img class="facebook" src="images/fb.png" alt="Facebook logo">
@@ -51,26 +52,26 @@
                 <label for="lname">Last Name *:</label>
                 <input id="lname" name="lastname" required>
 
-                <label for="title">Business Position Title *:</label>
-                <span>Only letters, dashes and spaces, 7 or more letters</span>
-                <input id="title" name="biztitle" minlength="7" pattern="[- A-Za-z]+" required>
+                <label for="title">Position Title *: Please enter: Letters, dashes and/or spaces (Min. of 7 characters)</label>
+                <input id="title" name="bisinessTitle" minlength="7" pattern="[- A-Za-z]+" required>
 
-                <label for="email">Email *:</label>
+                <label for="email">Email Address*:</label>
                 <input id="email" name="email" type="email" placeholder="name@domain.com" required>
 
-                <label for="phone">Cell Phone Number *:</label>
+                <label for="phone">Cell-phone Number *:</label>
                 <input id="phone" name="phone" type="tel" required>
 
                 <label for="business">Business Name *:</label>
                 <input id="business" name="bizname" required>
 
 
-                <label id="member">Enter your Level of Membership</label>
+                <label id="member">Levels of Membership:</label>
                 <div id="radio">
                     <input type="radio" id="one" name="mlevel" value="level1">
                     <label for="one">Level 1</label>
-
+                    
                     <input type="radio" id="two" name="mlevel" value="level2">
+                    
                     <label for="two">Level 2</label>
 
                     <input type="radio" id="three" name="mlevel" value="level3">
@@ -85,9 +86,7 @@
                 <label for="message">Business Description:</label>
                 <textarea id="message"></textarea>
 
-                <input id='date' type="hidden" name="todaydate">
-
-
+                <input id='today_date' type="hidden" name="todaydate">
 
                 <input type="submit" value="Join the Chamber">
 
@@ -95,32 +94,36 @@
             <h1></h1>
             <div id="memberinfo">
                 <h2>Membership levels benefits</h2>
-                <h3>NP Membership</h3>
-                <ul>
-                    <li>For non profit organizations and there is no fee</li>
-                </ul>
-                <h3>Bronze Membership</h3>
-                <ul>
-                    <li>15% discount on events</li>
-                    <li>10% discount on advertising</li>
-                    <li>Fee of $50/month</li>
-                </ul>
-                <h3>Silver Membership</h3>
-                <ul>
-                    <li>25% discount on events</li>
-                    <li>15% discount on advertising</li>
-                    <li>Free participation in the trade fair</li>
-                    <li>Fee of $100/month</li>
-                </ul>
-                <h3>Gold Membership</h3>
-                <ul>
-                    <li>50% discount on events</li>
-                    <li>50% discount on advertising</li>
-                    <li>Free participation in the trade fair</li>
-                    <li>5 free featured ads per year</li>
-                    <li>1 free training per quarter</li>
-                    <li>Fee of $250/month</li>
-                </ul>
+                <h3>Non-profit Membership:</h3>
+
+                    <p>For non profit organizations and there is no fee.</p>
+
+                    <hr>
+                    <h3>Bronze Membership:</h3>
+                    <ul>
+                        <p>15% discount on events</p>
+                        <p>10% discount on advertising</p>
+                        <p>Fee of $50/month</p>
+                    </ul>
+                    <hr>
+                    <h3>Silver Membership:</h3>
+                    <ul>
+                        <p>25% discount on events</p>
+                        <p>15% discount on advertising</p>
+                        <p>Free participation in the trade fair</p>
+                        <p>Fee of $100/month</p>
+                    </ul>
+                    <hr>
+                    <h3>Gold Membership:</h3>
+                    <ul>
+                        <p>50% discount on events</p>
+                        <p>50% discount on advertising</p>
+                        <p>Free participation in the trade fair</p>
+                        <p>5 free featured ads per year</p>
+                        <p>1 free training per quarter</p>
+                        <p>Fee of $250/month</p>
+                    </ul>
+
             </div>
 
 
@@ -151,6 +154,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script src="js/join.js"></script>
 </body>
 
 </html>
