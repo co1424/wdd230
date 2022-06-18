@@ -1,0 +1,87 @@
+{
+    "businesses": [{
+            "name": "Exito",
+            "address": "Ak 68 #90 - 88",
+            "phone": "+57 305 4829046",
+            "website": "https://www.exito.com/",
+            "image": "exito_logo.svg"
+        },
+        {
+            "name": "Cleaning de Colombia SAS",
+            "address": "Cra. 60D #No. 97 - 59",
+            "phone": "+57 316 2273293",
+            "website": "https://www.cleanco.com.co/",
+            "image": "cleanco_logo.png"
+        },
+        {
+            "name": "Surtimax",
+            "address": "Cra. 4 #136 Sur-1 a 136 Sur-61",
+            "phone": "+57 305 2422922",
+            "website": "https://www.surtimax.com.co/",
+            "image": "surtimax_logo.png"
+        },
+        {
+            "name": "Citibank",
+            "address": "Ac. 82 #9-64",
+            "phone": "+57 1 6382420",
+            "website": "https://www.citi.com/",
+            "image": "citi_logo.png"
+        },
+        {
+            "name": "Homecenter",
+            "address": "Ak 68 #80-77",
+            "phone": "+57 1 800 0127373",
+            "website": "https://www.homecenter.com.co/homecenter-co/",
+            "image": "homecenter_logo.webp"
+        },
+        {
+            "name": "General Electric Colombia",
+            "address": "Cl. 80 #6911",
+            "phone": "+57 1 9172151",
+            "website": "http://generalelectriccolombia.com/",
+            "image": "ge_logo.webp"
+        },
+        {
+            "name": "Servientrega Dirección General",
+            "address": "Cl. 6 ##34a-11",
+            "phone": "+57 1 7700200",
+            "website": "https://www.servientrega.com/",
+            "image": "servientrega_logo.svg"
+        },
+        {
+            "name": "Ktronix",
+            "address": "Transversal 93 # 34 - 99",
+            "phone": "+57 1 800 0111448",
+            "website": "https://www.ktronix.com/",
+            "image": "ktronix_logo.svg"
+        },
+        {
+            "name": "La Nacional Carnicería",
+            "address": "Dg. 70a ##4-60",
+            "phone": "+57 310 2645478",
+            "website": "https://www.lanacional.co/",
+            "image": "nacional_carniceria_logo.webp"
+        },
+        {
+            "name": "Arturo Calle",
+            "address": "Calle 17 #8-80 Centro",
+            "phone": "+57 1 3180655",
+            "website": "https://www.arturocalle.com/",
+            "image": "arturo-calle_logo.png"
+        },
+        {
+            "name": "TuBici Bike Shop",
+            "address": "Av. Cra 19 ## 153 - 40",
+            "phone": "+57 319 5170667",
+            "website": "https://www.tubici.com/",
+            "image": "tubici_logo.png"
+        },
+        {
+            "name": "Mundo Mascota Pet Shop",
+            "address": "Cl. 72 #68g-28",
+            "phone": "+57 1 6604340",
+            "website": "https://www.mundomascotapetshop.com/",
+            "image": "petshop_logo.png"
+        }
+    ]
+}
