@@ -134,10 +134,16 @@ body {
     width: 100%;
     margin: 0 auto;
 } 
+
+img .views {
+    width: 200px;
+}
 .views {
     width: 50px;
     margin: 0 auto;
     padding: 20px;
+    padding-top: 30px;
+
 }
 #views_box {
     text-align: center;
