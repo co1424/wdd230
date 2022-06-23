@@ -18,31 +18,28 @@ const getWeather = async () => {
     document.querySelector('#weathericon').setAttribute('src', iconsrc);
     document.querySelector('#weathericon').setAttribute('alt', desc);
     console.log(jsObject.wind.speed);
-    document.querySelector('#figcaption').textContent = desc;
+    document.querySelector('#figcaption').textContent = desc.toUpperCase();
 
     // THIS DOES CAMEL-CASE ON THE ICON CAPTION:
-    const string = 'light rain';
+    // const string = 'light rain';
 
-    const array = string.split(' ');
+    // const array = string.split(' ');
 
-    function uppercaseFirst(string) {
+    // function uppercaseFirst(string) {
 
-        const uppercaseString = string.charAt(0).toUpperCase() + string.slice(1);
+    //     const uppercaseString = string.charAt(0).toUpperCase() + string.slice(1);
 
 
 
-        return uppercaseString;
+    //     return uppercaseString;
 
-    }
+    // }
 
-    const newArray = array.map((word) => uppercaseFirst(word)).join(' ');
+    // const newArray = array.map((word) => uppercaseFirst(word)).join(' ');
 
-    console.log(newArray);
+    // console.log(newArray);
     //
-    // function capitalizeFirstLetter(desc) {
-    //     return desc.charAt(0).toUpperCase() + desc.slice(1);
-    // };
-    // console.log(capitalizeFirstLetter(desc));
+   
 
     // WIND SPEED:
     const speed = jsObject.wind.speed;
