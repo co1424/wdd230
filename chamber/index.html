@@ -72,16 +72,16 @@
             <div class="box" id="weather">
                 <h3>Weather</h3>
                 <div class='temp'>
-                    <img src="images/weather-icon.png" alt="weather icon">
-                    <p id="degrees">33</p>
-                    <p><span>&#8451;</span></p>
-
+                    <figure><img src=" " alt=" " id="weathericon" />
+                        <figcaption></figcaption>
+                    </figure>
+                    <p><span id="current-temp"></span>&deg;F</p>
                 </div>
                 <hr>
-                <h3>Partly Coudy</h3>
+                <h3 id="figcaption"></h3>
                 <p>Wind Speed:</p>
-                <p><span id='windSpeed'>2.5</span><span>km/h</span></p>
-                <p>Wind Chill:<span id='windChill'>N/A</span></p>
+                <p><span id='windSpeed'></span><span>KM/H</span></p>
+                <p>Wind Chill:<span id='windChill'>N/A</span> &deg;F</p>
 
             </div>
 
@@ -158,6 +158,7 @@
     </footer>
 
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

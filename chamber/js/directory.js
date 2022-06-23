@@ -2,6 +2,8 @@ const requestURL =  'https://co1424.github.io/wdd230/chamber/js/data.json';
 
 
 function showCards(){
+
+    
     let row = document.querySelectorAll('tr');
     row.forEach((item) => {
         item.remove();
