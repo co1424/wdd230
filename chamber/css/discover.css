@@ -39,20 +39,25 @@ nav a {
 
 nav ul {
 
-    text-align: center;
-    font-size: 14pt;
-    margin: 5px;
-    padding: 10px;
-    padding-top: 10px;
-    list-style-type: none;
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 
+}
+
+nav li {
+    display: none;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li:nth-child(2) {
+    display: block;
 }
 
 #header_date {
@@ -61,6 +66,10 @@ nav ul {
     margin-right: 20px;
     margin-left: 20px;
 
+}
+
+#msg-box {
+    display: none;
 }
 
 .ham {
@@ -101,9 +110,9 @@ div .facebook {
     width: 55px;
     height: 55px;
     grid-column: 5/6;
-    /* padding: 10px; */
+    padding: 10px;
     grid-row: 1;
-    /* margin-top: 20px; */
+    margin-top: 25px;
     border-radius: 50%;
 
 }
@@ -111,15 +120,11 @@ div .facebook {
 div .linkedin {
     width: 55px;
     height: 55px;
-    /* padding: 10px; */
+    padding: 10px;
     grid-column: 6/7;
     grid-row: 1;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     border-radius: 50%;
-}
-
-#msg-box {
-    display: none;
 }
 
 
@@ -239,9 +244,21 @@ img {
         max-width: 400px;
         width: 80%;
     }
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li:nth-child(2) {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     main {   
         grid-template-columns: 1fr 1fr 1fr; 
     }
