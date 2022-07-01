@@ -39,25 +39,23 @@ nav ul {
 
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 0;
     margin: 0;
     align-items: center;
 
 }
 
-nav li {
+
+
+nav ul li:nth-child(2) {
     display: none;
 }
 
-nav li:first-child {
+nav ul li {
     display: block;
 }
-
-nav li:nth-child(2) {
-    display: block;
-}
-
 #header_date {
     text-align: center;
     border: solid black 2px;
@@ -81,7 +79,7 @@ nav li:nth-child(2) {
     background-color: lightblue;
     text-decoration: none;
 
-    width: 35px;
+    width: 45px;
 }
 
 .ham span:nth-child(1) {
@@ -195,7 +193,7 @@ table a {
 }
 
 .table tr, table td {
-    /* display: block; */
+
     border: none;
 
 }
@@ -255,7 +253,7 @@ table a {
 
 /* ******************* MEDIA QUERIES ******************* */
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
     main {
         grid-template-columns: 1fr 1fr;
     }
@@ -263,27 +261,18 @@ table a {
         max-width: 400px;
         width: 80%;
     }
-    nav ul {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
 
-    nav ul li:nth-child(2) {
-        display: none;
-    }
+    
 
-    nav ul li {
-        display: block;
-    }
     .table tr, table td {
-        /* display: block; */
+        display: block;
         border: none;
         line-height: 2.5rem;
         text-align: center;
       }
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 900px) {
     main {   
         grid-template-columns: 1fr 1fr 1fr; 
     }
@@ -293,8 +282,25 @@ table a {
     figcaption {
         display: block;
     }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        display: none;
+    }
+
+    nav li:first-child {
+        display: block;
+    }
+    
+    nav li:nth-child(2) {
+        display: block;
+    } 
+
     .table tr, table td {
-        /* display: block; */
+        display: block;
         border: none;
         line-height: 2.5rem;
         text-align: center;

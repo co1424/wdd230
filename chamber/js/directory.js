@@ -115,14 +115,14 @@ let list = document.querySelector('#list');
 list.addEventListener('click', showList);
 
 
-function reportWindowSize() {
-  if (window.innerWidth > 900 && window.innerWidth < 1100) {
-      showList();
-  } else {
-      showCards();
-  }
-  console.log(window.innerWidth);
-}
+// function reportWindowSize() {
+//   if (window.innerWidth > 900 && window.innerWidth < 1100) {
+//       showList();
+//   } else {
+//       showCards();
+//   }
+//   console.log(window.innerWidth);
+// }
 
-window.addEventListener('resize', reportWindowSize);
-window.addEventListener('load', reportWindowSize);
+// window.addEventListener('resize', reportWindowSize);
+// window.addEventListener('load', reportWindowSize);
