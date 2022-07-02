@@ -55,6 +55,7 @@ nav ul li:nth-child(2) {
 
 nav ul li {
     display: block;
+    width: 200px;
 }
 #header_date {
     text-align: center;
@@ -70,6 +71,7 @@ nav ul li {
 
 .ham {
     text-align: center;
+    display: none;
 
 
 }
@@ -97,6 +99,15 @@ nav ul li {
 .ham.responsive span:nth-child(2) {
     display: block;
 }
+
+.responsive li {
+    display: block;
+}
+
+.responsive li a {
+    width: 200px;
+}
+
 
 li {
     padding-top: 50px;
@@ -261,7 +272,9 @@ table a {
         max-width: 400px;
         width: 80%;
     }
-
+    .ham {
+        display: block;
+    }
     
 
     .table tr, table td {
@@ -276,6 +289,11 @@ table a {
     main {   
         grid-template-columns: 1fr 1fr 1fr; 
     }
+
+    .ham {
+        display: block;
+    }
+
     figure img:hover {
         box-shadow: 0 0 15px #333;
     }
@@ -292,11 +310,11 @@ table a {
     }
 
     nav li:first-child {
-        display: block;
+        display: none;
     }
     
     nav li:nth-child(2) {
-        display: block;
+        display: none;
     } 
 
     .table tr, table td {
