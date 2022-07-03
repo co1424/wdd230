@@ -12,8 +12,12 @@ header {
     width: 120px;
     margin-top: -50px;
     border-radius: 50%;
+    /* pointer-events: none; */
+
 
 }
+
+
 
 li .active {
     background-color: rgb(138, 34, 34);
