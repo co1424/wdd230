@@ -1,152 +1,343 @@
-body{
-    background-color: lightblue;
-    text-align: center;
-    font-family: 'Zen Antique', serif;;
-}
-content {
-    max-width: 1600px;
-    margin: 0 auto;
-    font-family: 'Zen Antique', serif;;
-}
-header {
-    background-color: lightblue;
-    display: grid;
-    grid-template-columns: 150px auto;
-    font-family: 'Zen Antique', serif;;
-}
-#home {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    font-family: 'Zen Antique', serif;;
+/* ---------- HEADER CSS ----------- */
 
-}
-#FAQs {
-    justify-content: center;
-    font-family: 'Zen Antique', serif;;
-    
-}
-#home-box {
-    grid-column: 1/2;
+header {
     width: 100%;
-}
-#home-img {
-    width: 100%;
-}
-#home-msg {
-    grid-column: 2/3;
-    margin-top: 50px;
+    justify-content: space-evenly;
     background-color: lightblue;
-    font-family: 'Zen Antique', serif;;
-    font-size: 20px;
 }
-#home-msg h1 {
-    text-align: center;
-    font-size: 35px;
-    margin-bottom: 15px;
-    font-family: 'Zen Antique', serif;;
-}
-#home-msg h4 {
-    text-align: center;
-    color: black;
-    font-family: 'Zen Antique', serif;;
-}
-#home-msg p {
-    text-align: center;
-    color: black;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: 'Zen Antique', serif;;
-    font-size: 15px;
-}
-#faqs-msg {
-    text-align: center;
-    color: black;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: 'Zen Antique', serif;;
-    font-size: 18px;
-}
+
+
 .logo {
     width: 80px;
     height: 80px;
     align-items: center;
-    margin-top: -3px; 
-    margin-bottom: -8px;
+    margin-top: -3px;
+    margin-bottom: -3px;
 }
+
 #logo_link {
-    padding-top: 0 px;
+
     justify-self: center;
     align-self: center;
 }
-nav {
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-}
-.topnav {
-    overflow: hidden;
-    background-color: lightblue;
-    margin-bottom: 0px;
-    margin-top: 14px;
-}
-    
 
-.topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
+nav {
+    padding: 2px;
+
+}
+
+
+nav a {
     text-decoration: none;
     font-size: 20px;
+    padding: 15px;
+
 }
-.topnav a:hover {
+
+nav ul {
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+
+}
+
+nav a:hover {
     background-color: rgb(119, 199, 226);
     color: black;
     margin-bottom: 15px;
-}
-.topnav a.active {
-    background-color: #2196F3;
-    color: whitesmoke;
-}
-.topnav input[type=text] {
-    float: right;
-    padding: 6px;
-    border: none;
-    margin-top: 12px;
-    margin-right: 16px;
-    margin-bottom: 35px;
-    font-size: 20px;
-    border-color: black;
-    font-family: 'Zen Antique', serif;;
 
 }
+
+li .active {
+    background-color: #2196F3;
+    color: white;
+}
+
+nav .nav_item:hover {
+    background-color: #2196F3;
+    color: white;
+
+
+}
+
+nav li {
+    display: none;
+    padding: 3px;
+}
+
+nav li:first-child {
+    display: block;
+}
+
+nav li:nth-child(2) {
+    display: block;
+}
+
+#header_date {
+    text-align: center;
+    /* border: solid black 2px; */
+    margin-right: 20px;
+    margin-left: 20px;
+
+}
+
+#msg-box {
+    display: none;
+}
+
+.ham {
+    text-align: center;
+
+
+}
+
+.ham span {
+    background-color: lightblue;
+    text-decoration: none;
+
+    width: 35px;
+}
+
+.ham span:nth-child(1) {
+    display: block;
+}
+
+.ham span:nth-child(2) {
+    display: none;
+}
+
+.ham.responsive span:nth-child(1) {
+    display: none;
+}
+
+.ham.responsive span:nth-child(2) {
+    display: block;
+}
+
+.responsive li {
+    display: block
+}
+
+
+li {
+    padding-top: 50px;
+}
+
+
+/* ---------- MAIN CONTENT- CSS ----------- */
+/* ---------- MAIN CONTENT- CSS ----------- */
+/* ---------- MAIN CONTENT- CSS ----------- */
+
+/* **************************************** */
+/* ---------- INDEX.HTML - CSS ----------- */
+/* **************************************** */
+
+body {
+    background-color: white;
+    text-align: center;
+    font-family: 'Zen Antique', serif;
+    max-width: 1250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: center;
+}
+
+content {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* margin-left: 50px; */
+    /* margin-right: 50px; */
+
+}
+
+#home-msg {
+    padding-left: 30px;
+    padding-right: 60px;
+    padding-top: 100px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr ; */
+    font-family: 'Zen Antique', serif;
+    margin-bottom: 100px;
+
+}
+
 #hike-path-img {
     width: 750px;
     height: 500px;
     opacity: 90%;
 }
+
+
+/* SLIDESHOW CSS */
+* {
+    box-sizing: border-box
+}
+
+/* body {font-family: Verdana, sans-serif; margin:0} */
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    grid-column: 1/2;
+
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    margin-left: 40px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin-right: 120px;
+}
+
+/* Caption text */
+.text {
+    color: #141414;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: left;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+/* Button on top of slideshow */
+
+.mySlides img {
+    width: 100%;
+    height: auto;
+}
+
+.mySlides .learn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #2196F3;
+    color: white;
+    font-size: 16px;
+    /* padding: 12px 24px; */
+    /* padding-top: 100px; */
+    margin-top: 160px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.mySlides .learn:hover {
+    background-color: #2196F3;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* ----- END OF SLIDESHOW CSS */
 .faqs-box {
     display: grid;
     grid-template-columns: 1fr 600px 1fr;
-    font-family: 'Zen Antique', serif;;
+    font-family: 'Zen Antique', serif;
+    ;
 }
+
 #open-img {
     grid-column: 2/3;
     width: 600px;
     height: 100%;
     opacity: 90%;
     margin-top: 20px;
-    
+
 }
-.button-box {
+
+/* .button-box {
     text-align: center;
     border-color: #2196F3;
-    margin-top: 50px;
+
     grid-column: 1/2;
-    
-}
-.learn, .join {
+        
+} */
+.learn,
+.join {
     background-color: #174F77;
     color: white;
     text-decoration: none;
@@ -154,16 +345,21 @@ nav {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    font-family: 'Zen Antique', serif;;
+    font-family: 'Zen Antique', serif;
+    ;
 }
-.learn:hover, .join:hover {
+
+.learn:hover,
+.join:hover {
     background-color: #1E82B9;
     color: black;
 }
+
 #rock-img {
     width: 600px;
-        
+
 }
+
 form {
     margin: 0 auto;
     width: 500px;
@@ -171,9 +367,12 @@ form {
     background-color: lightblue;
     align-items: center;
 }
+
 .whyus {
-    font-family: 'Zen Antique', serif;;
+    font-family: 'Zen Antique', serif;
+    ;
 }
+
 #feedback {
     background-color: lightblue;
     position: absolute;
@@ -181,19 +380,23 @@ form {
     left: 0;
     right: 0;
     padding: .5em;
-    display: none; 
+    display: none;
 }
+
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 label {
     display: inline-block;
     width: 90px;
     text-align: right;
 }
-input, textarea {
+
+input,
+textarea {
     font: 1em sans-serif;
     font-size: 20px;
     width: 300px;
@@ -203,56 +406,130 @@ input, textarea {
     margin-bottom: 25px;
     vertical-align: top;
 }
-input[type="text" i] {
+
+input[type="text"i] {
     padding: 1px 2px;
     width: 300px;
     height: 30px;
 }
-input[type="email" i] {
+
+input[type="email"i] {
     padding: 1px 2px;
     width: 300px;
     height: 30px;
 }
-form li + li {
+
+form li+li {
     margin-top: 1em;
 }
+
 li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
+
 .button {
     padding-left: 80px;
 }
+
 button {
     margin-left: .5em;
 }
+
 .button-box {
     text-align: center;
 }
+
+/* **************************************** */
+/* ---------- TRAILS.HTML - CSS ----------- */
+/* **************************************** */
+
+
+
+
+/* ---------- FOOTER CSS ----------- */
+/* ---------- FOOTER CSS ----------- */
+/* ---------- FOOTER CSS ----------- */
 footer {
     background-color: lightblue;
-    padding: 25px 50px;
-    margin-top: 200px; 
+    padding: 5px;
+    margin-top: 200px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: -20px;
-    font-family: 'Zen Antique', serif;;
+    font-family: 'Zen Antique', serif;
+    font-size: 1.2em;
 }
+
+#my_info {
+    /* font-size: 1.5em; */
+    /* font-weight: bolder; */
+}
+
 footer h3 {
     color: black;
 }
+
 footer a {
     color: black;
     text-decoration: none;
 }
+
 footer a:hover {
     color: black;
 }
+
 footer h3 a:hover {
     text-decoration: underline;
 }
+
 footer .social img {
-    padding-top: 15px;
-    border-color: 5px black;
+    /* padding-top: 15px; */
+    /* border: 1px solid black; */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+/* ---------- MEDIA QUERIES ----------- */
+/* ---------- MEDIA QUERIES ----------- */
+/* ---------- MEDIA QUERIES ----------- */
+
+
+/* SMALL: */
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Medium Screen */
+@media screen and (min-width: 800px) {
+
+    nav ul {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav ul li:nth-child(2) {
+        display: none;
+    }
+
+    nav ul li {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    .boxes {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
 }
