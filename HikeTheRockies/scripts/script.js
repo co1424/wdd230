@@ -52,6 +52,16 @@ function setStyles() {
 
 };
 
+// / HAMBURGER MENU:
+const hamburgerBtn = document.querySelector('.ham');
+const navigation = document.querySelector('.navigation')
+
+function toggleMenu() {
+    navigation.classList.toggle('responsive');
+    hamburgerBtn.classList.toggle('responsive');
+}
+
+hamburgerBtn.addEventListener('click', toggleMenu, false);
 
 // DYNAMIC YEAR AT FOOTER
 
