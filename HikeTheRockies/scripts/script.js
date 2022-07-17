@@ -1,7 +1,8 @@
+// /////////////////////////////////////////////////////
+// /////////////////////// HEADER //////////////////////
+// /////////////////////////////////////////////////////
+
 // // HEADER DATE:
-
-//
-
 let date = new Date();
 let year = date.getFullYear();
 
@@ -13,7 +14,7 @@ const monthDay = todayDate.getDate();
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+  "July", "August", "September", "October", "November", "December"
 ];
 
 // MONDAY & TUESDAY BANNER ANNOUNCEMENT:
@@ -22,7 +23,7 @@ const parent = document.querySelector('#msg-box');
 console.log(date.getDay());
 if (date.getDay() == 4 || date.getDay() == 5) {
 
-    parent.style.display = 'block';
+  parent.style.display = 'block';
 }
 
 // DAYS SINCE LAST  VISITED: 
@@ -32,23 +33,23 @@ console.log(lastvisiteddate);
 
 
 if (!localStorage.getItem('lastvisit')) {
-    localStorage.setItem('lastvisit', Date.now());
-    document.getElementById('diff').textContent = 'This is your 1st visit';
+  localStorage.setItem('lastvisit', Date.now());
+  document.getElementById('diff').textContent = 'This is your 1st visit';
 } else {
-    setStyles();
+  setStyles();
 };
 
 function setStyles() {
-    let prevDate = localStorage.getItem('lastvisit');
-    let currDate = Date.now();
+  let prevDate = localStorage.getItem('lastvisit');
+  let currDate = Date.now();
 
-    let difference = currDate - prevDate;
-    console.log(difference);
-    let daysDifference = Math.floor(difference / 1000 / 60 / 60 / 24);
+  let difference = currDate - prevDate;
+  console.log(difference);
+  let daysDifference = Math.floor(difference / 1000 / 60 / 60 / 24);
 
-    document.getElementById('diff').textContent = daysDifference;
+  document.getElementById('diff').textContent = daysDifference;
 
-    localStorage.setItem('lastvisit', Date.now());
+  localStorage.setItem('lastvisit', Date.now());
 
 };
 
@@ -57,17 +58,15 @@ const hamburgerBtn = document.querySelector('.ham');
 const navigation = document.querySelector('.navigation')
 
 function toggleMenu() {
-    navigation.classList.toggle('responsive');
-    hamburgerBtn.classList.toggle('responsive');
+  navigation.classList.toggle('responsive');
+  hamburgerBtn.classList.toggle('responsive');
 }
 
 hamburgerBtn.addEventListener('click', toggleMenu, false);
 
-// DYNAMIC YEAR AT FOOTER
-
-document.querySelector('#year').textContent = year;
-
-document.querySelector('#today_date').textContent = `${days[day]}, ${monthDay} ${monthNames[month]} ${year}`
+// /////////////////////////////////////////////////////
+// /////////////////// INDEX.HTML PAGE /////////////////
+// /////////////////////////////////////////////////////
 
 // SLIDESHOW IN INDEX.HTML //
 let slideIndex = 1;
@@ -75,11 +74,11 @@ showSlides(slideIndex);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
-}
+};
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
-}
+};
 
 function showSlides() {
   let i;
@@ -88,7 +87,29 @@ function showSlides() {
     slides[i].style.display = "none";
   }
   slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  slides[slideIndex-1].style.display = "block";
-  setTimeout(showSlides, 3500); // Change image every 2 seconds
-}
+  if (slideIndex > slides.length) {
+    slideIndex = 1
+  } 
+  slides[slideIndex - 1].style.display = "block";
+
+  setTimeout(showSlides, 2500); // Change image every 2.5 seconds
+};
+
+
+
+// /////////////////////////////////////////////////////
+// //////// INDIVIDUAL TRAILS.HTML PAGE JS//////////////
+// /////////////////////////////////////////////////////
+
+
+
+
+// /////////////////////////////////////////////////////
+// /////////////////////// FOOTER //////////////////////
+// /////////////////////////////////////////////////////
+
+// DYNAMIC YEAR AT FOOTER
+
+document.querySelector('#year').textContent = year;
+
+document.querySelector('#today_date').textContent = `${days[day]}, ${monthDay} ${monthNames[month]} ${year}`;

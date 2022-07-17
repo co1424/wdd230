@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/hike-the-rockies-style.css">
+    <title>Packsaddle Lake Trail</title>
+
+</head>
+
+<body>
+    <div id="trails_content">
+        <header>
+
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a id="logo_link" href="index.html">
+                            <img class="logo" src="images/hiketherockies-logo-clear.png" alt="Hike The Rockies Logo">
+                        </a>
+                    </li>
+                    <li class="ham"><a href="#"><span>&#9776;</span><span>X</span></a></li>
+                    <li><a href="index.html" class="nav_item">Home</a></li>
+                    <li><a href="trails.html" class="active nav_item">Trails</a></li>
+                    <li><a href="FAQs.html" class="nav_item">FAQs</a></li>
+                    <li><a href="contactus.html" class="nav_item">Contact Us</a></li>
+                </ul>
+                <p id="header_date"><span id="today_date"></span>|| Days since last
+                    visited: <span id='diff'></span></p>
+
+            </nav>
+        </header>
+        <hr>
+        <div>
+            <p id='msg'><span id="msg-box">👋🏼 Come join us on our Saturday hike at 7:00 a.m.</span></p>
+        </div>
+        <h1 id="title_trails">Packsaddle Lake Trail</h1>
+        <main>
+            <div class="individual_trail">
+
+
+
+                <div class="trail-directions">
+                    <img id="packsaddle-img" src="images/packsaddle-lake.jpg" alt="packsaddle-lake">
+                    <a class="directions_button" target="_blank" href="https://goo.gl/maps/Rzwy4KGxkuFzqxn48">📍 How to
+                        get there?</a>
+                </div>
+
+                <div class="trail-info">
+                    <div class="trail-text">
+                        <p>Discover this 0.8-mile out-and-back trail near Driggs, Idaho. Generally considered an easy
+                            route, it takes an average of 29 min to complete. This is a popular trail for hiking, trail
+                            running, and walking, but you can still enjoy some solitude during quieter times of day. The
+                            best times to visit this trail are May through September. Dogs are welcome, but must be on a
+                            leash.</p>
+                    </div>
+                    <hr>
+                    <div class="packsaddle-weather">
+                        <div id="weather">
+                            <h3>Packsaddle Lake Trail-Weather</h3>
+                            <div class='temp'>
+                                <figure><img src="#" alt="#" id="weathericon" />
+                                    <figcaption></figcaption>
+                                </figure>
+                                <p><span id="current-temp"></span>&deg;F</p>
+                            </div>
+
+                            <h4 id="figcaption"></h4>
+                            <hr>
+                            <p>Wind Speed: <span id='windSpeed'></span><span>KM/H</span></p>
+
+                            <p>Wind Chill:<span id='windChill'>N/A</span> &deg;F</p>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div id="my_info">
+                <p>&copy;<span id="year"></span> | Hike The Rockies | Eddy Renteria | Last
+                    Modified: <span id="lastdate"></span></p>
+            </div>
+
+            <a href="site-plan.html">Site Plan</a>
+            <a class="map" target="_blank" href="https://goo.gl/maps/P3ZTtE2wzpnnYMu26">📍 Location Map</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+
+            </div>
+        </footer>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/packsaddle-weather.js"></script>
+</body>
+
+</html>
