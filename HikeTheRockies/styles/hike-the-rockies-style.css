@@ -15,7 +15,7 @@ header {
     align-items: center;
     margin-top: -3px;
     margin-bottom: -3px;
-    
+
 }
 
 #logo_link {
@@ -35,7 +35,7 @@ nav {
     padding: 2px;
     box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
     background-color: lightblue;
-    
+
 
 }
 
@@ -112,8 +112,16 @@ nav li:nth-child(2) {
 .ham span {
     background-color: lightblue;
     text-decoration: none;
-
     width: 35px;
+}
+
+.ham a {
+    padding: 0;
+    /* margin: 10px; */
+}
+
+.ham a:hover {
+    background-color: lightblue;
 }
 
 .ham span:nth-child(1) {
@@ -238,7 +246,7 @@ img {
     bottom: 8px;
     width: 100%;
     text-align: center;
-    
+
 }
 
 /* Number text (1/3 etc) */
@@ -301,12 +309,6 @@ img {
 }
 
 /* ----- END OF SLIDESHOW CSS */
-.faqs-box {
-    display: grid;
-    grid-template-columns: 1fr 600px 1fr;
-    font-family: 'Zen Antique', serif;
-    ;
-}
 
 #open-img {
     grid-column: 2/3;
@@ -339,10 +341,6 @@ img {
     color: black;
 }
 
-#rock-img {
-    width: 600px;
-
-}
 
 form {
     margin: 0 auto;
@@ -405,7 +403,6 @@ button {
 
 
 #title_trails {
-    font-family: Marcellus, serif;
     text-align: center;
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -425,6 +422,7 @@ button {
     margin: 0 auto;
     max-width: 400px;
     width: 95%;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
 }
 
 figure {
@@ -450,7 +448,7 @@ figure {
 
 
 .trail-info {
-    margin: 0px 45px 0px 45px;
+    margin: 0px 55px 0px 45px;
 }
 
 
@@ -488,7 +486,7 @@ figure {
     margin-bottom: 0;
 }
 
-#weather p{
+#weather p {
     margin-bottom: 20px;
 }
 
@@ -598,6 +596,32 @@ figure {
     background-color: lightblue;
 }
 
+/* **************************************** */
+/* --------------FAQs.html - CSS ---------- */
+/* **************************************** */
+
+#faqs-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+#faqs-img {
+    width: 320px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: 0 auto;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+
+}
+
+#faqs-text {
+    grid-column: 1;
+    grid-row: 2;
+    margin: -150px 20px 40px 20px;
+    padding-top: 20px;
+}
 
 /* ---------- FOOTER CSS ----------- */
 /* ---------- FOOTER CSS ----------- */
@@ -640,13 +664,11 @@ footer h3 a:hover {
     text-decoration: underline;
 }
 
-footer #my_info{
+footer #my_info {
     font-family: 'Poppins', sans-serif;
 }
 
 footer .social img {
-    /* padding-top: 15px; */
-    /* border: 1px solid black; */
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -847,12 +869,12 @@ footer .social img {
     #weather h3 {
         margin-bottom: 0;
     }
-    
+
     .temp p {
         margin-top: 0;
     }
-    
-    #weather p{
+
+    #weather p {
         margin-bottom: 20px;
     }
 
@@ -915,7 +937,7 @@ footer .social img {
     .websters-dam-weather {
         width: 350px;
     }
-    
+
     .trail-info {
         margin: 0px 45px 0px 45px;
     }
@@ -940,6 +962,7 @@ footer .social img {
     .individual_trail {
         margin-top: 100px;
         display: grid;
+        justify-content: center;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
         width: 100%;
@@ -979,12 +1002,12 @@ footer .social img {
     #weather h3 {
         margin-bottom: 0;
     }
-    
+
     .temp p {
         margin-top: 0;
     }
-    
-    #weather p{
+
+    #weather p {
         margin-bottom: 20px;
     }
 
@@ -1036,7 +1059,7 @@ footer .social img {
         height: 300px;
 
     }
-    
+
     /* WEBSTERS DAM TRAIL */
     #websters-dam-img {
         width: 551px;
@@ -1062,3 +1085,60 @@ footer .social img {
     }
 
 }
+
+/* **************************************** */
+/* ------- FAQs.HTML - MEDIA QUERIES ------ */
+/* **************************************** */
+
+@media screen and (min-width: 800px) {
+
+    #faqs-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+    }
+
+    #faqs-img {
+        width: 620px;
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0 auto;
+
+    }
+
+    #faqs-text {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 0;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    #faqs-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+
+    #faqs-img {
+        width: 620px;
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0 auto;
+        margin-top: 40px;
+
+    }
+
+    #faqs-text {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0px 20px 20px 20px;
+    }
+
+
+}
+
