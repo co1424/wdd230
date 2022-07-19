@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 /* ---------- HEADER CSS ----------- */
 
 header {
     width: 100%;
     justify-content: space-evenly;
-    background-color: lightblue;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     align-items: center;
     margin-top: -3px;
     margin-bottom: -3px;
+    
 }
 
 #logo_link {
@@ -21,9 +24,18 @@ header {
     align-self: center;
 }
 
+#logo_link:hover {
+    background-color: lightblue;
+
+}
+
+
+
 nav {
     padding: 2px;
     box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+    
 
 }
 
@@ -32,6 +44,7 @@ nav a {
     text-decoration: none;
     font-size: 20px;
     padding: 15px;
+    color: black;
 
 }
 
@@ -148,13 +161,13 @@ body {
     align-content: center;
     box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
     padding: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 content {
     max-width: 1000px;
     margin: 0 auto;
-    /* margin-left: 50px; */
-    /* margin-right: 50px; */
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -165,13 +178,15 @@ content {
     grid-row: 2;
     margin-left: 20px;
     margin-top: -150px;
+    line-height: 1.5em;
+
 }
 
 main {
     display: grid;
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr ; */
-    font-family: 'Zen Antique', serif;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: 100px;
 
 }
@@ -193,9 +208,6 @@ main {
     display: none;
     grid-column: 1;
     grid-row: 1;
-
-
-
 }
 
 img {
@@ -214,7 +226,7 @@ img {
     margin: auto;
     justify-content: center;
     align-content: center;
-    /* padding-left: 50px; */
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -226,6 +238,7 @@ img {
     bottom: 8px;
     width: 100%;
     text-align: center;
+    
 }
 
 /* Number text (1/3 etc) */
@@ -264,12 +277,13 @@ img {
     -ms-transform: translate(-50%, -50%);
     background-color: #2196F3;
     color: white;
-    font-size: 16px;
+    font-size: 26px;
     margin-top: 35px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .mySlides .learn:hover {
@@ -316,8 +330,7 @@ img {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
-    font-family: 'Zen Antique', serif;
-    ;
+    font-family: 'Poppins', sans-serif;
 }
 
 .learn:hover,
@@ -340,8 +353,7 @@ form {
 }
 
 .whyus {
-    font-family: 'Zen Antique', serif;
-    ;
+    font-family: 'Poppins', sans-serif;
 }
 
 #feedback {
@@ -358,24 +370,6 @@ ul {
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-label {
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-}
-
-input,
-textarea {
-    font: 1em sans-serif;
-    font-size: 20px;
-    width: 300px;
-    height: 110px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-    margin-bottom: 25px;
-    vertical-align: top;
 }
 
 
@@ -406,6 +400,7 @@ button {
 #trails_content {
     max-width: 1400px;
     margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -413,7 +408,7 @@ button {
     font-family: Marcellus, serif;
     text-align: center;
     color: black;
-    /* background-color: gray; */
+    font-family: 'Poppins', sans-serif;
     padding: 30px;
 }
 
@@ -422,6 +417,7 @@ button {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 45px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .trail_image {
@@ -437,10 +433,11 @@ figure {
     margin: 0 auto;
 }
 
-figcaption {
+#figcaption {
     display: block;
     text-align: center;
-    padding: 5px;
+    margin-top: 0;
+
 }
 
 
@@ -478,6 +475,22 @@ figcaption {
 
 }
 
+.trail-text {
+    padding: 15px;
+}
+
+#weather h3 {
+    margin-bottom: 0;
+}
+
+.temp p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#weather p{
+    margin-bottom: 20px;
+}
 
 /* PACKSADDLE TRAIL */
 #packsaddle-img {
@@ -494,15 +507,96 @@ figcaption {
     border: 1px solid black;
     box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
     background-color: lightblue;
-
-
 }
 
 
+/* YELLOWSTONE NATIONAL PARK */
+
+#yellowstone-img {
+    width: 320px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+
+}
+
+.yellowstone-weather {
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+}
+
+/* CRESS CREEK TRAIL */
+
+#cress-creek-img {
+    width: 320px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+
+}
+
+.cress-creek-weather {
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+}
 
 
+/* GRAND TETON NATIONAL PARK */
+#tetons-img {
+    width: 320px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
 
+}
 
+.tetons-weather {
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+}
+
+/* WEBSTERS DAM TRAIL */
+#websters-dam-img {
+    width: 320px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+
+}
+
+.websters-dam-weather {
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+}
+
+/* KELLY MOUNTAIN */
+#kelly-mountain-img {
+    width: 320px;
+    margin-bottom: 15px;
+    border: 2px solid lightgray;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+
+}
+
+.kelly-mountain-weather {
+    width: 320px;
+    margin: auto;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    background-color: lightblue;
+}
 
 
 /* ---------- FOOTER CSS ----------- */
@@ -521,18 +615,21 @@ footer {
     font-family: 'Zen Antique', serif;
     font-size: 1.2em;
     box-shadow: 0px 0px 2px 2px rgb(27, 44, 121);
+    font-family: 'Poppins', sans-serif;
 }
 
 
 
 footer h3 {
     color: black;
+
 }
 
 footer a {
     color: black;
     text-decoration: none;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 footer a:hover {
@@ -543,6 +640,10 @@ footer h3 a:hover {
     text-decoration: underline;
 }
 
+footer #my_info{
+    font-family: 'Poppins', sans-serif;
+}
+
 footer .social img {
     /* padding-top: 15px; */
     /* border: 1px solid black; */
@@ -550,12 +651,17 @@ footer .social img {
     height: 50px;
     border-radius: 50%;
     padding: 10px;
+    font-family: 'Poppins', sans-serif;
 
 }
 
-/* ---------- MEDIA QUERIES ----------- */
-/* ---------- MEDIA QUERIES ----------- */
-/* ---------- MEDIA QUERIES ----------- */
+/* **************************************** */
+/* **************************************** */
+/* -------------- MEDIA QUERIES ----------- */
+/* -------------- MEDIA QUERIES ----------- */
+/* -------------- MEDIA QUERIES ----------- */
+/* **************************************** */
+/* **************************************** */
 
 
 /* **************************************** */
@@ -604,6 +710,7 @@ footer .social img {
         margin-left: 20px;
         margin-top: -350px;
         margin-bottom: -250px;
+        line-height: 2em;
 
     }
 
@@ -665,15 +772,10 @@ footer .social img {
 
     #home-msg {
         margin-top: 80px;
-        /* padding-left: 30px;
-        padding-right: 60px;
-        padding-top: 100px; */
         grid-column: 2;
         grid-row: 1;
-        /* margin-left: 20px; */
-        /* margin-top: -300px; */
-        /* margin-bottom: -200px; */
-        /* padding-bottom: -250px; */
+        line-height: 1.5em;
+
     }
 
     .mySlides .learn {
@@ -742,6 +844,19 @@ footer .social img {
 /* Medium Screen */
 @media screen and (min-width: 800px) {
 
+    #weather h3 {
+        margin-bottom: 0;
+    }
+    
+    .temp p {
+        margin-top: 0;
+    }
+    
+    #weather p{
+        margin-bottom: 20px;
+    }
+
+    /* PACKSADDLE TRAIL */
     #packsaddle-img {
         width: 620px;
         margin-bottom: 15px;
@@ -750,13 +865,71 @@ footer .social img {
     }
 
     .packsaddle-weather {
-        width: 620px;
+        width: 350px;
     }
 
+    /* YELLOWSTONE NATIONAL PARK */
+    #yellowstone-img {
+        width: 620px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
 
+    }
 
+    .yellowstone-weather {
+        width: 350px;
+    }
+
+    /* CRESS CREEK TRAIL */
+    #cress-creek-img {
+        width: 620px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
+
+    }
+
+    .cress-creek-weather {
+        width: 350px;
+    }
+
+    /* GRAND TETON NATIONAL PARK */
+    #tetons-img {
+        width: 620px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
+
+    }
+
+    .tetons-weather {
+        width: 350px;
+    }
+
+    /* WEBSTERS DAM TRAIL */
+    #websters-dam-img {
+        width: 620px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
+
+    }
+
+    .websters-dam-weather {
+        width: 350px;
+    }
+    
     .trail-info {
         margin: 0px 45px 0px 45px;
+    }
+
+    /* KELLY MOUNTAIN TRAIL */
+    #kelly-mountain-img {
+        width: 620px;
+        margin-bottom: 15px;
+        border: 2px solid lightgray;
+
+    }
+
+    .kelly-mountain-weather {
+        width: 350px;
     }
 
 }
@@ -775,27 +948,16 @@ footer .social img {
 
     }
 
-    #packsaddle-img {
-        width: 551px;
-        margin-left: 20px;
-    }
-
     .trail-directions {
         grid-column: 1;
         grid-row: 1;
-    }
-
-    .packsaddle-weather {
-        width: 350px;
-        height: 300px;
-
     }
 
     .trail-info .trail-text p {
         grid-column: 1/2;
         grid-row: 2;
         margin: 0;
-        padding: 0;
+        line-height: 1.5em;
     }
 
     .trail-info {
@@ -813,4 +975,90 @@ footer .social img {
         border-bottom: 0px;
 
     }
+
+    #weather h3 {
+        margin-bottom: 0;
+    }
+    
+    .temp p {
+        margin-top: 0;
+    }
+    
+    #weather p{
+        margin-bottom: 20px;
+    }
+
+    /* PACKSADDLE TRAIL */
+
+    #packsaddle-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .packsaddle-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    /* YELLOWSTONE NATIONAL PARK */
+    #yellowstone-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .yellowstone-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    /* CRESS CREEK TRAIL */
+    #cress-creek-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .cress-creek-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    /* GRAND TETON NATIONAL PARK */
+    #tetons-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .tetons-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+    
+    /* WEBSTERS DAM TRAIL */
+    #websters-dam-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .websters-dam-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+
+    /* KELLY MOUNTAIN TRAIL */
+    #kelly-mountain-img {
+        width: 551px;
+        margin-left: 20px;
+    }
+
+    .kelly-mountain-weather {
+        width: 350px;
+        height: 300px;
+
+    }
+
 }
