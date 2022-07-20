@@ -708,18 +708,7 @@ input[type='submit']:hover {
     color: white;
 }
 
-#memberinfo {
-    margin: 40px 40px 40px 100px;
-    font-size: 14px;
-    list-style: none;
-}
 
-#memberinfo li {
-    list-style: none;
-    line-height: 20px;
-    margin: 0 auto;
-    padding: 0px;
-}
 
 /* ---------- FOOTER CSS ----------- */
 /* ---------- FOOTER CSS ----------- */
@@ -1247,7 +1236,7 @@ footer .social img {
 
 @media screen and (min-width: 800px) {
     #contactus-page {
-        grid-column: 1fr;
+        grid-template-columns: 1fr;
         padding-bottom: 40px;
     }
 
