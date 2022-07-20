@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
     <link rel="stylesheet" href="styles/hike-the-rockies-style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap');
-    </style>
+    <title>Hike The Rockies</title>
+
 </head>
+
 <body>
-    <div id="content.contactus">
-    <header>
-    <a id="logo_link" href="index.html">
-        <img class="logo" src="images/hiketherockies-logo-clear.png" alt="Hike The Rockies Logo">
-    </a>
-    <nav class="topnav">
-        <a href="index.html">Home</a>
-        <a href="FAQs.html">FAQs</a>
-        <a href="contactus.html">Contact Us</a>
-        <input type="text" placeholder="Search...">
-    </nav>
-    </header>
-    <section id="faqs-box">
-        <img id="rock-img" src="images/risky-rock.jpg" alt="rock">
-    </section> 
-    <div id="whyus">
-        <p>
-            Sign up to find some hiking friends, and get a free hiking item!
-        </p>
+    <div id="contactus_content">
+        <header>
+
+            <nav class="navigation">
+                <ul>
+                    <li>
+                        <a id="logo_link" href="index.html">
+                            <img class="logo" src="images/hiketherockies-logo-clear.png" alt="Hike The Rockies Logo">
+                        </a>
+                    </li>
+                    <li class="ham"><a href="#"><span>&#9776;</span><span>x</span></a></li>
+                    <li><a href="index.html" class="nav_item">Home</a></li>
+                    <li><a href="trails.html" class="nav_item">Trails</a></li>
+                    <li><a href="FAQs.html" class="nav_item">FAQs</a></li>
+                    <li><a href="contactus.html" class="active nav_item">Contact Us</a></li>
+                </ul>
+
+
+            </nav>
+            <p id="header_date"><span id="today_date"></span> || Days since last
+                visited: <span id='diff'></span></p>
+        </header>
+        <hr>
+        <div>
+            <p id='msg'><span id="msg-box">👋🏼 Come join us on our Saturday hike at 7:00 a.m.</span></p>
+        </div>
+
+        <main id="contactus-page">
+            <section id="faqs-box">
+                <img id="hiking-friends-img" src="images/hiking-friends.jpg" alt="hiking-friends">
+            </section>
+
+
+
+
+            <div id="feedback-form">
+
+                <h4 id="sign-up"> Sign up to find some hiking friends, and get a free hiking item! </h4>
+                <form action="#" method="GET" autocomplete="on">
+                    <!-- FIRST NAME -->
+                    <label for="fname"> First Name *:</label>
+                    <input id="fname" name="fname" required>
+                    <!-- LAST NAME -->
+                    <label for="lname"> Last Name *:</label>
+                    <input id="lname" name="lname" required>
+                    <!-- EMAIL -->
+                    <label for="mail">E-mail *:</label>
+                    <input type="email" id="email" name="email" required>
+                    <!-- PHONE NUMBER -->
+                    <label for="phone">Phone Number *: </label>
+                    <input id="phone" type="tel" minlength="10" name="telephone" placeholder="(###) ###-####" required>
+                    <!-- MESSAGE BOX -->
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="msg" ></textarea>
+                    <input id="date" type="hidden" name="email_sent_date">
+                    <!-- SUBMIT BUTTON -->
+                    <input type="submit" value="Send us a Message">
+
+                </form>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div id="my_info">
+                <p>&copy;<span id="year"></span> | Hike The Rockies | Eddy Renteria | Last
+                    Modified: <span id="lastdate"></span></p>
+            </div>
+
+            <a href="site-plan.html">Site Plan</a>
+            <a class="map" target="_blank" href="https://goo.gl/maps/P3ZTtE2wzpnnYMu26">📍 Location Map</a>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="instagram icon">
+                </a>
+
+            </div>
+        </footer>
     </div>
 
-    <main class="form">
-    <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-            <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-            </li>
-            <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email">
-            </li>
-            <li>
-                <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li class="button">
-                <button type="submit">Send your message</button>
-            </li>
-            </ul>
-        </form>
-    </main>
-<footer>
-    <h3>Hike The Rockies &copy; 2021 - Eddy Renteria</h3>
-    <h3><a href="contactus.html"> Contact Us </a></h3>
-    <h3><a href="site-plan.html">Site Plan</a></h3>
-    <div class="social">
-        <a href="https://facebook.com" target="_blank">
-            <img src="images/facebook.png" alt="fb icon">
-        </a>
-        <a href="https://twitter.com" target="_blank">
-            <img src="images/twitter.png" alt="twitter icon">
-        </a>
-        <a href="https://instagram.com" target="_blank">
-            <img src="images/instagram.png" alt="instagram icon">
-        </a>
-    </div>
-    </footer>
-    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/form.js"></script>
+
 </body>
+
 </html>
